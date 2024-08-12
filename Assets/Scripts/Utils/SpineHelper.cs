@@ -63,7 +63,7 @@ namespace Arknights.Utils
         /// </summary>
         /// <param name="skelPath">Skeleton Animation asset path.</param>
         /// <param name="atlasPath">Skeleton Atlas asset path.</param>
-        /// <param name="texturesPath">Skeleton textures asset path.</param>
+        /// <param name="texturePath">Skeleton Texture asset path.</param>
         /// <param name="targetGameObject">The target GameObject to spawn Spine Skeleton Animation instance.</param>
         /// <param name="spineShader">The shader used for the Spine Skeleton Animation.</param>
         /// <param name="spineScale">The scale of the Spine Skeleton Animation.</param>
@@ -74,7 +74,7 @@ namespace Arknights.Utils
         public static async UniTask<SkeletonAnimation> InstantiateSpine(
             string skelPath,
             string atlasPath,
-            List<string> texturesPath,
+            string texturePath,
             GameObject targetGameObject,
             Shader spineShader,
             float spineScale = 1f,
@@ -89,6 +89,7 @@ namespace Arknights.Utils
                 TextAsset atlasTextAsset = new(await WebRequestHelper.GetTextData(atlasPath));
 
                 // Get image textures
+                List<string> texturesPath = new() { texturePath };
                 Texture2D[] imageTextures = new Texture2D[texturesPath.Count];
                 byte[] imageData;
 

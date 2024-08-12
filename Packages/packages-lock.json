@@ -15,11 +15,11 @@
       "hash": "f10a45537c88b309a89e4b8a087200f2edde4924"
     },
     "com.kirurobo.uniwinc": {
-      "version": "https://github.com/kirurobo/UniWindowController.git#upm",
+      "version": "https://github.com/kiraio-moe/UniWindowController.git#upm",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "185dd1b2e73f7ba0708b9532668133bb97908ed1"
+      "hash": "94c241cbeaeb3e05bb594377f4a25510ca724ecf"
     },
     "com.unity.burst": {
       "version": "1.8.16",
@@ -44,6 +44,15 @@
       "source": "registry",
       "dependencies": {
         "com.unity.test-framework": "1.1.9"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.inputsystem": {
+      "version": "1.7.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.uielements": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -129,6 +138,13 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
+    },
+    "com.yasirkula.ingamedebugconsole": {
+      "version": "https://github.com/yasirkula/UnityIngameDebugConsole.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b1204706248cea04f1b762dca8591e32ae044652"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
